@@ -10,6 +10,7 @@ body * {
   max-width: 1250px;
   margin: 0 auto;
 }
+
 button,
 a {
   cursor: pointer;
@@ -364,8 +365,12 @@ button:hover {
   }
   .completed-prject__list,
   .image,
-  .completed-projects__arrow-container {
+  .completed-projects__arrow-container,
+  .completed-projects__block-navigation {
     display: none;
+  }
+  .completed-project__column {
+    width: 160px;
   }
   .completed-projects__block-settings {
     position: absolute;
@@ -373,6 +378,7 @@ button:hover {
     margin: 0;
     text-align: left;
     display: flex;
+    width: 350px;
   }
   .completed-project__image-mobile {
     display: block;
@@ -385,15 +391,17 @@ button:hover {
   .completed-projects__block-settings {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   .completed-projects--navigation__title {
     font-size: 14px;
-    margin-right: 100px;
+    margin-right: 12px;
     margin-top: 36px;
   }
   .completed-projects--navigation__settings {
     font-size: 11px;
     line-height: 18px;
+    margin-right: 49px;
   }
   .completed-projects-container__block {
     padding: 0;
@@ -507,6 +515,17 @@ button:hover {
   padding: 5px;
   display: inline-block;
   vertical-align: text-top;
+}
+.online-control-button__mobile {
+  display: none;
+}
+.online-control__checkbox__text {
+  color: black;
+  font-size: 0.875rem;
+  margin-left: 8.6px;
+}
+.checkbox__online-control {
+  margin-top: 35px;
 }
 @media screen and (max-width: 1024px) {
   .online-control__images {
@@ -713,6 +732,7 @@ button:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 .tipes-of-repair__input {
+  margin-bottom: 25px;
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
@@ -745,6 +765,40 @@ button:hover {
   font-size: 18px;
   margin-right: 170px;
 }
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.checkbox__label {
+  cursor: pointer;
+}
+.checkbox__marker {
+  display: none;
+}
+.fake-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: #e3b873;
+  color: #fff;
+}
+.fake-checkbox::before {
+  content: "\2714";
+  opacity: 0;
+}
+.checkbox__marker:checked + .fake-checkbox::before {
+  opacity: 1;
+}
+.tipes-of-repair-button__mobile {
+  display: none;
+}
+.tipes-of-repair__checkbox__text {
+  color: white;
+  font-size: 0.875rem;
+  margin-left: 8.6px;
+}
 
 @media screen and (max-width: 1100px) {
   .tipes-of-repair__block-pig {
@@ -764,7 +818,7 @@ button:hover {
   }
 
   .tipes-of-repair__image {
-    width: 340px;
+    width: 330px;
   }
   .tipes-of-repair__text {
     margin-bottom: 59px;
