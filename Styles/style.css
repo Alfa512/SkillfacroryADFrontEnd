@@ -227,8 +227,8 @@ button:hover {
 .completed-projects__title {
   font-family: "Yeseva One";
   font-size: 27px;
-  text-transform: uppercase;
   color: #e3b873;
+  text-transform: uppercase;
   padding-top: 200px;
   margin-top: 0;
 }
@@ -243,8 +243,8 @@ button:hover {
 .completed-projects--navigation__title {
   font-family: "Yeseva One";
   font-size: 18px;
-  text-transform: uppercase;
   color: #e3b873;
+  text-transform: uppercase;
   margin-right: 88px;
 }
 
@@ -407,6 +407,7 @@ button:hover {
     padding: 0;
   }
 }
+/* completed-projects */
 
 /* online control */
 
@@ -993,6 +994,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
 }
 .our-clients__block-form {
   display: flex;
@@ -1046,7 +1048,7 @@ button:hover {
   height: 953px;
   position: relative;
   margin-top: -250px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .map-overlay {
